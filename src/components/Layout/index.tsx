@@ -27,6 +27,8 @@ const Layout = ({ pageTitle, children }: LayoutProps) => {
     </>
   );
 };
-const LayoutMain = styled("main")``;
+const LayoutMain = styled("main")`
+  min-height: 80vh;
+`;
 
 export default Layout;

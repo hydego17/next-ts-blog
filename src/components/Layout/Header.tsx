@@ -26,7 +26,6 @@ export const Header = ({}: HeaderProps) => {
 
 const StyledHeader = styled("header")`
   position: sticky;
-  background: #ededed;
 
   .header_nav {
     padding-top: 1.5rem;
