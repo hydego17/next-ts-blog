@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import { PageHeader } from "../components/Atom/PageHeader";
 import Layout from "../components/Layout";
 
 interface AboutProps {}
@@ -6,7 +7,9 @@ interface AboutProps {}
 export default function about({}: AboutProps): ReactElement {
   return (
     <Layout pageTitle="About">
-      <h1>About Us</h1>
+      <PageHeader>
+        <h1>About Us</h1>
+      </PageHeader>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus

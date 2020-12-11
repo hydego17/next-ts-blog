@@ -1,4 +1,4 @@
-import React from "react";
+import { ReactNode } from "react";
 import Head from "next/head";
 import styled from "@emotion/styled";
 
@@ -8,7 +8,7 @@ import { Header } from "./Header";
 
 interface LayoutProps {
   pageTitle: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const Layout = ({ pageTitle, children }: LayoutProps) => {
@@ -27,6 +27,7 @@ const Layout = ({ pageTitle, children }: LayoutProps) => {
     </>
   );
 };
+
 const LayoutMain = styled("main")`
   min-height: 80vh;
 `;
