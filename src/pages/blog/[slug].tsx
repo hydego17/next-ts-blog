@@ -6,6 +6,8 @@ import ReactMarkdown from "react-markdown";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 
 import Layout from "../../components/Layout";
+import { PageHeader } from "../../components/Atom/PageHeader";
+import Wrapper from "../../styles/wrapper";
 
 interface BlogPostProps {
   content: string;
@@ -20,14 +22,16 @@ const BlogPost: NextPage<BlogPostProps> = ({ frontmatter, content }) => {
   const { title, author, date } = frontmatter;
   return (
     <Layout pageTitle={title}>
-      <div>
+      <PageHeader>
         <h1> {title} </h1>
         <p>
           By {author} - {date}
         </p>
+      </PageHeader>
 
+      <Wrapper>
         <ReactMarkdown source={content} />
-      </div>
+      </Wrapper>
     </Layout>
   );
 };

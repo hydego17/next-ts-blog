@@ -8,14 +8,16 @@ export const Header = ({}: HeaderProps) => {
   return (
     <StyledHeader>
       <nav className="header_nav container">
-        <AppLink href="/" label="Next.js" />
+        <h1>
+          <AppLink href="/" label="Next.js" />
+        </h1>
 
         <ul>
           <li>
-            <AppLink href="/about" label="about" />
+            <AppLink href="/about" label="About" />
           </li>
           <li>
-            <AppLink href="/contact" label="contact" />
+            <AppLink href="/archive" label="Achive" />
           </li>
         </ul>
       </nav>

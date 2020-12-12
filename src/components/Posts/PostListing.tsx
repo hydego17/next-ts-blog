@@ -3,16 +3,16 @@ import { ReactElement } from "react";
 import PostPreview from "../../types/PostPreview";
 import ListingItem from "./ListingItem";
 
-interface Props {
+type Props = {
   posts: PostPreview[];
-}
+};
 
 export default function PostListing({ posts }: Props): ReactElement {
   return (
-    <div>
+    <article>
       {posts.map((post, index) => (
-        <ListingItem key={index} post={post} />
+        <ListingItem key={index} {...post} />
       ))}
-    </div>
+    </article>
   );
 }

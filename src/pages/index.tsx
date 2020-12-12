@@ -6,10 +6,11 @@ import PostPreview from "../types/PostPreview";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/Atom/PageHeader";
 import PostListing from "../components/Posts/PostListing";
+import Wrapper from "../styles/wrapper";
 
-interface BlogProps {
+type BlogProps = {
   posts: PostPreview[];
-}
+};
 
 const Home: NextPage<BlogProps> = ({ posts }) => {
   return (
@@ -19,11 +20,11 @@ const Home: NextPage<BlogProps> = ({ posts }) => {
         <p>This is a Next.js starter blog with Typescript</p>
       </PageHeader>
 
-      <section>
+      <Wrapper>
         <h2>Blog</h2>
 
         <PostListing posts={posts} />
-      </section>
+      </Wrapper>
     </Layout>
   );
 };
@@ -37,9 +38,16 @@ export const getStaticProps: GetStaticProps<BlogProps> = async () => {
       excerpt_separator: "\r\n\r\n",
     });
 
+    const date = data.date.toLocaleDateString("en", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+
     return {
       title: data.title,
       slug: fname.replace(".md", ""),
+      date,
       excerpt,
     };
   });

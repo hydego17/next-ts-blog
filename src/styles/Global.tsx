@@ -53,8 +53,12 @@ const GlobalStyle = () => {
         .container {
           max-width: 1000px;
           margin: 0 auto;
-          padding-left: 0.5rem;
-          padding-right: 0.5rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .section_wrapper {
+          max-width: 600px;
         }
       `}
     />

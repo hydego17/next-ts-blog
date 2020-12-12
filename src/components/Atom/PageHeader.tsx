@@ -11,6 +11,7 @@ export const PageHeader = ({ children }: Props) => {
 
 const StyledPageHeader = styled("header")`
   padding: 1rem 0;
+  margin-bottom: 1rem;
 
   h1 {
     font-size: clamp(1rem, 10vw, 2.5rem);

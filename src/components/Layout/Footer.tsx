@@ -11,5 +11,6 @@ export const Footer = ({}: FooterProps) => {
 };
 
 const FooterStyled = styled("footer")`
+  padding: 2rem 0;
   text-align: center;
 `;
