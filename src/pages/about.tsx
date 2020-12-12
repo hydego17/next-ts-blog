@@ -9,17 +9,16 @@ export default function about({}: AboutProps): ReactElement {
   return (
     <Layout pageTitle="About">
       <PageHeader>
-        <h1>About Me</h1>
+        <h1>About</h1>
+        <Wrapper>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+            eveniet repudiandae, possimus, qui labore quia, eaque sit incidunt
+            dolor maxime dolorem! Consequatur corporis est vitae voluptate
+            corrupti laborum? Quaerat, nobis!
+          </p>
+        </Wrapper>
       </PageHeader>
-
-      <Wrapper>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-          dolorum mollitia voluptatem autem incidunt excepturi? Soluta numquam
-          voluptatibus velit magnam dolorem inventore maxime accusamus ex rem.
-          Earum non a iure!
-        </p>
-      </Wrapper>
     </Layout>
   );
 }

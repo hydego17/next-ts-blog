@@ -10,16 +10,15 @@ export default function Archive({}: ArchiveProps): ReactElement {
     <Layout pageTitle="Archive">
       <PageHeader>
         <h1>Archive</h1>
+        <Wrapper>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+            eveniet repudiandae, possimus, qui labore quia, eaque sit incidunt
+            dolor maxime dolorem! Consequatur corporis est vitae voluptate
+            corrupti laborum? Quaerat, nobis!
+          </p>
+        </Wrapper>
       </PageHeader>
-
-      <Wrapper>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eveniet
-          repudiandae, possimus, qui labore quia, eaque sit incidunt dolor
-          maxime dolorem! Consequatur corporis est vitae voluptate corrupti
-          laborum? Quaerat, nobis!
-        </p>
-      </Wrapper>
     </Layout>
   );
 }
