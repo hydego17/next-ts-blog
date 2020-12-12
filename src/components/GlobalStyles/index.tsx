@@ -4,8 +4,9 @@ const GlobalStyles = () => {
   return (
     <Global
       styles={css`
-        * {
-          padding: 0;
+        *,
+        *:before,
+        *:after {
           margin: 0;
           box-sizing: border-box;
           -webkit-tap-highlight-color: transparent;
