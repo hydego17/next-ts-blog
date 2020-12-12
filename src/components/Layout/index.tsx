@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import Head from "next/head";
 import styled from "@emotion/styled";
 
-import GlobalStyles from "../GlobalStyles";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
@@ -14,7 +13,6 @@ interface LayoutProps {
 const Layout = ({ pageTitle, children }: LayoutProps) => {
   return (
     <>
-      <GlobalStyles />
       <Head>
         <title> Hydego | {pageTitle} </title>
       </Head>

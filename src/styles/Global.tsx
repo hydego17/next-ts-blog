@@ -1,6 +1,6 @@
 import { Global, css } from "@emotion/react";
 
-const GlobalStyles = () => {
+const GlobalStyle = () => {
   return (
     <Global
       styles={css`
@@ -16,6 +16,20 @@ const GlobalStyles = () => {
         body {
           font-family: --apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
             Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+          padding: 1rem 0;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        h3 {
+          font-size: 1.5rem;
         }
 
         a {
@@ -47,4 +61,4 @@ const GlobalStyles = () => {
   );
 };
 
-export default GlobalStyles;
+export default GlobalStyle;
